@@ -15,6 +15,7 @@ import {
 } from 'react-router-dom';
 
 import Hls from 'hls.js';
+import AbrExperimentPage from './AbrExperimentPage';
 
 import {
   getHlsUrl,
@@ -208,6 +209,11 @@ function App() {
                 onRefresh={refreshVideos}
               />
             }
+          />
+
+          <Route
+            path="/experiment/:id"
+            element={<AbrExperimentPage />}
           />
 
           <Route
@@ -599,6 +605,12 @@ function WatchPage({
               <span className="watch-duration">
                 {formatDuration(video.duration)}
               </span>
+            </div>
+
+            <div className="watch-lab-link">
+              <Link to={`/experiment/${video.id}`} className="button-secondary">
+                Open ABR experiment lab
+              </Link>
             </div>
 
             <div className="watch-meta">
