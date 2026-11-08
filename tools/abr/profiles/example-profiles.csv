@@ -1,6 +1,0 @@
-duration_seconds,rate_mbit,label
-600,unlimited,baseline
-600,3,limited-3mbit
-600,8,recovery-8mbit
-600,1.5,limited-1_5mbit
-600,5,recovery-5mbit
