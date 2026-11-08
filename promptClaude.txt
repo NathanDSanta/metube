@@ -1,0 +1,171 @@
+# Task: Generate the First Iteration of a LaTeX Project Report
+
+I need you to help me write the first iteration of a technical project report in LaTeX.
+
+I will provide you with:
+- A LaTeX template that you MUST use as the basis for the document.
+- Documentation and information describing the progression of the project.
+- Additional files, screenshots, configurations, or other relevant materials.
+
+Your job is to analyse all the provided material and produce a complete first iteration of the project's report.
+
+## 1. General requirements
+
+- Use the provided LaTeX template. Preserve its structure, formatting, packages, document style, and conventions whenever possible.
+- Write the entire document in **Catalan**.
+- Use relatively simple, clear, and technically accurate Catalan. Avoid unnecessarily complicated vocabulary or overly academic expressions.
+- The result must be a technical report suitable for a university project.
+- Generate a complete, compilable `.tex` file.
+- Do not simply summarise the provided information. Explain the concepts, technologies, procedures, and decisions in sufficient detail.
+- Do not invent technical details, configurations, results, or events that are not supported by the supplied information.
+- If information is missing, do not make assumptions. Ask me for clarification when necessary.
+
+## 2. Project structure: Common and specific parts
+
+The project has two distinct components:
+
+1. **Part comuna (common part):** The work shared by the group, including common objectives, concepts, technologies, infrastructure, and procedures.
+2. **Part específica (specific part):** The work corresponding to the individual project, including its particular implementation, experiments, decisions, and results.
+
+These two parts MUST be clearly distinguished throughout the report.
+
+Analyse the provided documentation to determine which information belongs to each part. Do not mix individual work with group-wide work.
+
+If the template already establishes a structure for these parts, follow it. Otherwise, organise the content logically while maintaining a clear separation.
+
+## 3. Technical environment
+
+The project uses the following operating systems and infrastructure:
+
+- **Client VM:** Arch Linux.
+- **Server VM:** Arch Linux.
+- **Router:** OpenWrt.
+
+When describing the router, keep the explanation relatively brief. Mention that OpenWrt is open-source firmware based on Linux and that it provides LuCI, a web-based graphical interface for configuration and administration.
+
+Do not dedicate excessive space to explaining the operating systems themselves. Focus on how they were used in the project.
+
+## 4. Technical explanations
+
+Pay particular attention to explaining the technologies and procedures documented in the supplied material.
+
+In particular, **HLS (HTTP Live Streaming) must receive a detailed explanation**.
+
+Cover, where supported by the provided documentation:
+
+- What HLS is and why it is used.
+- Its architecture and main components.
+- The role of playlists, including master playlists and media playlists.
+- The role of video segments.
+- How video encoding and segmentation work.
+- The relationship between FFmpeg and HLS.
+- How the client requests and receives the content.
+- How the server processes and serves the video.
+- How the different components interact.
+- Any relevant protocols, formats, configurations, or technical decisions.
+
+Explain not only WHAT was done, but also WHY it was done and HOW it works.
+
+### Experimental and learning process
+
+An especially important aspect of this report is documenting the process followed to understand and study HLS.
+
+Describe the progression of the work, including:
+- The initial investigation and learning process.
+- The tools and commands used.
+- The experiments performed.
+- The configurations tested.
+- The problems encountered.
+- The solutions or conclusions reached.
+- How the understanding of HLS evolved throughout the project.
+
+Use the actual progression I provide rather than presenting the work as if everything had been planned and implemented perfectly from the beginning.
+
+Where appropriate, include code snippets, terminal commands, configuration examples, diagrams, and explanations.
+
+Do not omit relevant intermediate steps simply because they were not part of the final implementation. The learning process is an important part of the report.
+
+## 5. Images and diagrams
+
+Whenever an image, screenshot, diagram, or other visual element would improve the explanation, include a LaTeX figure using the following placeholder:
+
+`image.png`
+
+For example:
+
+```latex
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image.png}
+    \caption{Descripció de la imatge.}
+    \label{fig:example}
+\end{figure}
+```
+
+Use descriptive captions and meaningful labels.
+
+Do not create fictional screenshots or claim that an image shows something that has not been provided. The placeholder will be replaced with the actual image later.
+
+Avoid adding unnecessary images.
+
+## 6. Bibliography and sources
+
+Include all external sources used to prepare the report in the group's bibliography.
+
+Requirements:
+- Follow the bibliography conventions established by the provided template.
+- Prefer official documentation, technical specifications, RFCs, and reliable technical sources.
+- Particularly consider official documentation for HLS, FFmpeg, Arch Linux, OpenWrt, and other technologies discussed.
+- Cite sources in the relevant sections of the report.
+- Ensure that every bibliography entry corresponds to a real source.
+- Never invent references, URLs, authors, publication dates, or technical specifications.
+- If the template uses a shared bibliography file, preserve its existing entries and add the new references appropriately.
+
+Clearly distinguish between information obtained from external documentation and observations made during the project.
+
+## 7. Writing quality and accuracy
+
+Before producing the final document, verify that:
+
+- The entire report is written in Catalan.
+- Technical terminology is used consistently.
+- The common and specific parts are clearly separated.
+- The project progression is represented accurately and chronologically where appropriate.
+- HLS and the experiments used to understand it are explained in sufficient detail.
+- All technical explanations are consistent with the supplied evidence.
+- Figures, references, labels, and cross-references are valid.
+- The LaTeX syntax is correct and the document can be compiled.
+- The bibliography contains all the sources cited in the document.
+- No unsupported information has been introduced.
+
+**Section 8: AI usage**
+
+Leave section 8 completely untouched. Do not write, modify, or generate any content for this section. I will complete it myself.
+
+## 8. Working procedure
+
+Follow this workflow:
+
+1. Inspect the provided LaTeX template and understand its structure and conventions.
+2. Read and analyse ALL the project documentation and materials I provide.
+3. Reconstruct the project's progression and identify the common and specific components.
+4. Identify missing information, contradictions, or ambiguities.
+5. If essential information is missing, ask me specific clarification questions BEFORE writing the report.
+6. Once the information is sufficient, generate the first iteration of the report.
+7. Review the resulting LaTeX source for technical accuracy, completeness, and compilation issues.
+
+Do not start writing the final document before understanding the supplied materials.
+
+## 9. Expected deliverable
+
+Produce:
+
+- A complete `.tex` file based on the supplied template.
+- A bibliography file if the template requires a separate one.
+- Any additional LaTeX resources strictly necessary for compilation.
+
+The result should be a substantial and well-structured **first iteration**, not merely an outline or a collection of bullet points.
+
+Prioritise technical accuracy, detailed explanations, faithful documentation of the actual work, and clear separation between the common and specific parts.
+
+If you encounter any limitation that prevents you from processing a file or generating a complete document, explain it rather than silently omitting information.
