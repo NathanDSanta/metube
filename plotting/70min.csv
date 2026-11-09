@@ -1,0 +1,58 @@
+duration_seconds,rate_mbit,label
+30,12.0,Initial high-speed buffer build
+45,8.0,Slight drop, stable high quality (1080p)
+60,4.0,Drop to mid tier (720p transition)
+25,1.5,Network contention spike
+15,0.5,Severe bandwidth dip (Low resolution)
+45,3.5,Gradual recovery
+120,6.0,Sustained good connection
+60,10.0,Burst speed peak
+150,5.0,Stable streaming window
+50,2.0,Minor degradation
+40,1.2,Sub-optimal throughput
+20,0.4,Micro-stall threat / low bitrate switch
+10,0.1,Extreme choke / potential playback buffer drain
+30,1.8,Slow step up
+90,4.5,Medium-high stability
+150,7.5,High quality playback window
+80,2.8,Moderate dip
+40,0.8,Low bandwidth throttle
+20,0.3,Buffering risk segment
+70,3.0,Recovery phase
+180,6.5,Long stable period
+170,8.5,Excellent throughput window
+30,1.0,Fast bandwidth drop
+15,15.0,Brief high-speed burst (ABR upswitch test)
+20,0.6,Immediate bandwidth crash (ABR downswitch test)
+45,2.2,Plateau step 1
+60,4.0,Plateau step 2
+90,9.0,Peak bandwidth recovery
+25,0.2,Severe bottleneck choke
+15,0.08,Near zero connection / buffer depletion test
+35,1.5,Slow revival
+120,5.5,Comfortable mid-high stream
+180,10.0,High bitrate sustained phase
+110,3.2,Moderate congestion
+45,0.7,Low throughput dip
+160,6.0,Rebounding stream
+250,8.0,Long high quality segment
+40,1.8,Degrading signal
+30,0.5,Congested network segment
+10,0.05,Critical stall / Force re-buffer
+20,0.3,Slow recovery attempt
+60,2.5,Stabilizing low-mid stream
+150,5.0,Moderate recovery phase
+200,7.0,High bandwidth window
+90,2.0,Drop to low resolution
+30,0.4,Deep congestion
+10,0.1,Buffer drain event
+60,3.0,Mid tier recovery
+200,8.5,Sustained high quality stream
+90,11.0,Max speed final stretch
+60,4.5,Mid tier step down
+40,1.2,Late-game network fluctuation
+20,0.3,Brief late choke
+50,2.5,Final recovery phase
+180,6.0,Stable stream through end of video
+160,10.0,Unrestricted final buffer flush
+
